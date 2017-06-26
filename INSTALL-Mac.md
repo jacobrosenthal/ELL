@@ -55,6 +55,10 @@ Then, invoke cmake:
 
     cmake ..
 
+To get the interfaces too:
+    brew install swig
+    cmake .. -DBUILD_INTERFACES=ON
+
 **Important:** don't forget the two dots (..) at the end of the command! 
 
 Finally, build ELL by typing 
