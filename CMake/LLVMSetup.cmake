@@ -30,7 +30,7 @@ endif()
 set(LLVMSetup_included true)
 
 # First try to use LLVM's CMake target (see http://llvm.org/releases/3.7.0/docs/CMake.html for documentation)
-find_package(LLVM QUIET CONFIG PATHS /usr/local/opt/llvm /usr/local/opt/llvm/lib/cmake/llvm )
+find_package(LLVM QUIET CONFIG PATHS /usr/local/opt/llvm@3.9 /usr/local/opt/llvm@3.9/lib/cmake/llvm )
 if(LLVM_FOUND)
     # Find the libraries that correspond to the LLVM components that we wish to use
     llvm_map_components_to_libnames(LLVM_LIBS all) 

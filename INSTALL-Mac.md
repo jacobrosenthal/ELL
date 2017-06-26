@@ -24,18 +24,18 @@ To clone the ELL repository using *git*, type
 ELL requires [*CMake*](https://cmake.org/), [*LLVM*](http://llvm.org/) version 3.9 or newer, and *Clang*. To download and install these prerequisites, type
 
     brew install cmake
-    brew install llvm --with-clang
+    brew install llvm@3.9 --with-clang
 
 If you have already have *Xcode* installed and would rather use the version of *Clang* included with it, you can omit downloading *Clang* separately,
 but you must make sure the command-line version of the *Xcode* tools are available. 
 
     brew install cmake
-    brew install llvm
+    brew install llvm@3.9
     xcode-select --install
 
 If you already have *LLVM* installed, update to the newest version by typing
 
-    brew upgrade llvm
+    brew upgrade llvm@3.9
 
 ### Optional Dependencies (OpenBLAS and Doxygen)
 By default, ELL will use the *BLAS* linear algebra libraries built into the operating system, but it
